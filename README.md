@@ -5,7 +5,7 @@
 # Install
 
 1. Flash an Arch ISO using Balena Etcher (or a custom tool that will probably come soon)
-2. Connect to the internet using `iwctl` (or another tool for networking)
+2. Connect to the internet using `iwctl` or `mmcli`
 3. Format your disks using `cfdisk` or `fdisk`, FemArch's disk mapping is:
 ```txt
 sda1: boot/efi (recomended to be 1 GB)
