@@ -1,6 +1,9 @@
 timedatectl
 
 # file system stuf
+umount /dev/sda1
+umount /dev/sda2
+umount /dev/sda3
 mkfs.ext4 /dev/sda3
 mkswap /dev/sda2
 mkfs.fat -F 32 /dev/sda1
