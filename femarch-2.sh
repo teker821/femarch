@@ -1,7 +1,5 @@
 locale-gen
-read -p "Enter Hostname: " hostname
-echo "${hostname}" > /etc/hostname
-passwd
+echo "femarch" > /etc/hostname
 
 # install grub
 grub-install --target=x86_64-efi --efi-directory=/boot --bootloader-id=GRUB
