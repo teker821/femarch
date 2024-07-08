@@ -14,5 +14,5 @@ pacman-key --init
 pacman-key --populate
 pacstrap -K /mnt base linux linux-firmware vim networkmanager curl grub-install man
 genfstab -U /mnt >> /mnt/etc/fstab
-echo "\a"
+echo -en "\007"
 arch-chroot /mnt

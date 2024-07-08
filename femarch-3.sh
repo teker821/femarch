@@ -53,5 +53,5 @@ curl https://raw.githubusercontent.com/teker821/femarch/main/img/wallpaper.png -
 curl https://raw.githubusercontent.com/teker821/femarch/main/res/motd2 > /etc/motd
 yay -Syu --devel
 pacman -Syu --devel
-echo "\a"
+echo -en "\007"
 echo "Restart for changes to take affect"

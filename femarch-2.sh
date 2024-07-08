@@ -12,6 +12,6 @@ pacman-key --populate
 pacman -Syu --devel
 
 curl https://raw.githubusercontent.com/teker821/femarch/main/res/motd > /etc/motd
-echo "\a"
+echo -en "\007"
 echo "Reboot for changes to take affect"
 exit
