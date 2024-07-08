@@ -1,0 +1,6 @@
+export DISPLAY = 0
+export NSCDE_DATADIR = "~/.nscde/"
+autoload -Uz compinit promptinit
+compinit
+promptinit
+prompt walters

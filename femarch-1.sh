@@ -1,5 +1,4 @@
 timedatectl
-cfdisk
 
 # file system stuf
 mkfs.ext4 /dev/sda3
@@ -10,6 +9,9 @@ mount /dev/sda3 /mnt
 mount /dev/sda1 /mnt/boot
 swapon /dev/sda2
 
-pacstrap -K /mnt base linux linux-firmware vim git networkmanager sudo
+# pacstrap and chroot
+pacman-key --init
+pacman-key --populate
+pacstrap -K /mnt base linux linux-firmware vim networkmanager curl grub-install man
 genfstab -U /mnt >> /mnt/etc/fstab
 arch-chroot /mnt
