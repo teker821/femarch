@@ -1,6 +1,5 @@
 # beginning
 read -p "Continue? (y/n): " confirm && [[ $confirm == [yY] || $confirm == [yY][eE][sS] ]] || exit 1
-echo "Installation is complete when you hear the beep"
 su root
 pacman-key --init
 pacman-key --populate
